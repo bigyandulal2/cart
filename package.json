@@ -1,11 +1,12 @@
 {
-  "homepage": "https://",
+  "homepage": "https://bigyandulal2.github.io/Cartreact",
   "name": "cart",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy":,
+    "predeploy": "npm run build",
+    "deploy": "gh pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
