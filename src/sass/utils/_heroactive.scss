@@ -1,0 +1,59 @@
+#boss {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+
+  &_close {
+    &:hover {
+      cursor: pointer;
+      fill: $Orange;
+    }
+    &_box {
+      display: flex;
+      justify-content: flex-end;
+      margin: 2rem 0;
+    }
+  }
+  &_img1 {
+    border-radius: 1.4rem;
+  }
+
+  &_previous {
+    left: 0%;
+    &:hover {
+      stroke: $Orange;
+      cursor: pointer;
+    }
+    &_box {
+      @include icon;
+
+      left: -12px;
+    }
+  }
+  &_next {
+    &:hover {
+      stroke: $Orange;
+      cursor: pointer;
+    }
+    &_box {
+      @include icon;
+      right: -12px;
+    }
+  }
+  &_img_box {
+    &_active {
+      height: 500px;
+      width: 500px;
+    }
+    &_2 {
+      margin: 2rem 4rem;
+
+      & img {
+        height: 80px;
+        width: 80px;
+      }
+    }
+  }
+}

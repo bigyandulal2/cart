@@ -1,0 +1,43 @@
+#navbar {
+  gap: 6rem;
+  border-bottom: 1px solid rgb(187, 187, 187, 0.5);
+  align-items: center;
+  & img:hover {
+    cursor: pointer;
+  }
+  &_menu {
+    display: none;
+  }
+  &_list_items {
+    color: $Very_dark_blue;
+    font-weight: 500;
+    & li {
+      padding: 4rem 0;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0 3px 0 $Orange;
+      }
+    }
+  }
+  &_avatar_box {
+    border: 1px solid $Orange;
+  }
+}
+.parent {
+  padding: 0rem 12rem;
+  background-color: $White;
+}
+#cart_no {
+  background-color: $Orange;
+  height: 17px;
+  width: 17px;
+  border-radius: 1000px;
+  text-align: center;
+  position: absolute;
+  top: -6px;
+  left: 12px;
+  & span {
+    padding: 2px 2px;
+    color: white;
+  }
+}

@@ -1,0 +1,73 @@
+#hero_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding: 10rem 3rem;
+  &_name {
+    color: $Orange;
+  }
+  &_details {
+  }
+  &_description {
+    color: $Grayish_blue;
+    font-weight: 600;
+  }
+  &_price {
+    gap: 2rem;
+    align-items: center;
+
+    &_discount {
+      font-size: 1.3rem;
+      background-color: $Pale_orange;
+      color: $Orange;
+      align-self: center;
+      padding: 0.3rem;
+      font-weight: bold;
+      position: relative;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: black;
+        position: absolute;
+        bottom: -29px;
+        left: -72px;
+      }
+    }
+  }
+  &_discount {
+    color: $Grayish_blue;
+    font-weight: 600;
+  }
+  &_cart {
+    background-color: $Light_grayish_blue;
+    padding: 0 3rem;
+    gap: 3rem;
+    align-items: center;
+    & p {
+      margin-top: 1px;
+    }
+  }
+}
+#plus {
+  height: 5px;
+  width: 12px;
+}
+#minus {
+  height: 13px;
+  width: 13px;
+}
+#btn {
+  background-color: $Orange;
+  display: flex;
+  gap: 1rem;
+  padding: 1.4rem 7rem;
+  border-radius: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  &:hover {
+    cursor: pointer;
+  }
+}

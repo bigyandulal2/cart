@@ -1,0 +1,32 @@
+$border-radius: 1.4rem;
+
+#hero {
+  padding: 10rem 3rem;
+
+  &_img_box1 {
+    // height: 450px;
+    width: 450px;
+
+    & img {
+      object-fit: contain;
+      border-radius: $border-radius;
+    }
+  }
+  &_img_box2 {
+    height: 90px;
+    width: 90px;
+    & img {
+      object-fit: contain;
+      border-radius: calc($border-radius/2);
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.4;
+      }
+    }
+  }
+}
+.active {
+  opacity: 0.4;
+  border: 2px solid $Orange;
+}

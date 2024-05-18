@@ -1,0 +1,38 @@
+#cart {
+  // height: 300px;
+  position: absolute;
+  width: 276px;
+  height: 200px;
+  top: 103px;
+  right: 93px;
+  background-color: $Light_grayish_blue;
+
+  padding: 3rem 1rem;
+  &_name {
+    color: $Black;
+    font-size: 1.5rem;
+  }
+  &_img_box {
+    height: 50px;
+    width: 50px;
+  }
+  &_box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 3rem 0;
+    &_detail {
+      flex: 1;
+      & span {
+        font-size: 1.3rem;
+        color: $Dark_grayish_blue;
+      }
+      & p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+.btn_cart {
+  padding: 1rem 9rem !important;
+}
