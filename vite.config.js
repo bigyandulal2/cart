@@ -9,7 +9,6 @@ export default defineConfig({
   plugins: [react(), sassPlugin()
   
   ],
-  base:"/Cartreact/",
 
   css: {
     postcss: {
