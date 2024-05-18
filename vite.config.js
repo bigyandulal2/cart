@@ -6,10 +6,7 @@ import autoprefixer from "autoprefixer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    sassPlugin(), // Add Sass plugin
-  ],
+  plugins: [react(), sassPlugin()],
   css: {
     postcss: {
       plugins: [tailwindcss, autoprefixer],
