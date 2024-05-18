@@ -33,7 +33,12 @@ export default function ClickCart() {
                   $125 *{itemQuantity} <strong>{125 * itemQuantity}</strong>
                 </p>
               </div>
-              <img src={Delete} alt="delete" onClick={handleDelete} />
+              <img
+                src={Delete}
+                alt="delete"
+                className="hover:cursor-pointer"
+                onClick={handleDelete}
+              />
             </div>
             <button id="btn" className="btn_cart">
               CheckOut

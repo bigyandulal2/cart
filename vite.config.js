@@ -6,7 +6,7 @@ import autoprefixer from "autoprefixer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/Cartreact/",
+  base: "/cart/",
   plugins: [react(), sassPlugin()],
 
   css: {
