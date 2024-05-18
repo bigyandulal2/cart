@@ -26,6 +26,9 @@ $border-radius: 1.4rem;
     }
   }
 }
+#arrow_mobile {
+  display: none;
+}
 .active {
   opacity: 0.4;
   border: 2px solid $Orange;

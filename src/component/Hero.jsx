@@ -74,7 +74,11 @@ export default function Hero({ close, setClose }) {
             <img src={img} alt="product-1" />
             <div>
               {/* dgsgsdgdsg */}
-              <UseArrow handleNext={handleNext} handlePrev={handlePrev} />
+              {
+                <div id="arrow_mobile">
+                  <UseArrow handleNext={handleNext} handlePrev={handlePrev} />
+                </div>
+              }
             </div>
           </div>
           <div id="hero_img_box2" className="flex w-full gap-11">
